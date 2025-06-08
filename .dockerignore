@@ -1,0 +1,25 @@
+# .dockerignore
+
+# Thư mục môi trường ảo
+.venv/
+venv/
+env/
+
+# Thư mục cache của Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Thư mục chứa ảnh đã upload (sẽ được quản lý bằng volume)
+uploaded_images/
+
+# File cấu hình môi trường (sẽ được inject lúc runtime)
+.env
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
